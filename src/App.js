@@ -33,7 +33,7 @@ const filteredCoins = coins.filter(coin=>{
     <div className="coin-app">
       <div className="coin-search">
          <form onSubmit={(e)=>e.preventDefault()}>
-          <input name="searchInput" className="coin-input" type="text" placeholder="search" onChange={handleChange}></input>
+          <input name="searchInput" className="coin-input" type="text" placeholder="search" onChange={handleChange} autoComplete="of" autoCorrect='of'></input>
          </form>    
       </div>
       <div className='infoRow'><span id='s1'>Name</span> <span id='s2'>Symbol</span> <span id='s3'>Last Price</span> <span id='s4'>Total Volume</span> <span id='s5'>24h Change</span> <span id='s6'>Market Cap</span></div>

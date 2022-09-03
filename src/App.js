@@ -21,7 +21,7 @@ function App() {
    
 function handleChange(event){
 
-  setSearch(event.target.value);
+  setSearch(event.target.value.trim());
 }
 
 const filteredCoins = coins.filter(coin=>{

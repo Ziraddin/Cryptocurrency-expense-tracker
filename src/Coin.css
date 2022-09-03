@@ -2,6 +2,7 @@
 
     display: flex;
     justify-content: center;
+    font-family: 'Saira', sans-serif;
 }
 
 .coin-row{
@@ -10,7 +11,7 @@
     flex-direction: row;
     justify-items: start;
     align-items: center;
-    width: 900px;
+    width: 850px;
     height: 80px;
     border-bottom: 1px solid black;
 }

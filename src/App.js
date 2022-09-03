@@ -32,11 +32,13 @@ const filteredCoins = coins.filter(coin=>{
   return (
     <div className="coin-app">
       <div className="coin-search">
-         <form>
+         <form onSubmit={(e)=>e.preventDefault()}>
           <input name="searchInput" className="coin-input" type="text" placeholder="search" onChange={handleChange}></input>
          </form>    
       </div>
-      {filteredCoins.map(coin=>{
+      <div className='infoRow'><span id='s1'>Name</span> <span id='s2'>Symbol</span> <span id='s3'>Last Price</span> <span id='s4'>Total Volume</span> <span id='s5'>24h Change</span> <span id='s6'>Market Cap</span></div>
+      
+      { filteredCoins.length ===0  ?<h1 id='notfoundalert'>Not Found</h1>: filteredCoins.slice(0,6).map(coin=>{
        return (<Coin key={coin.id}
         image={coin.image}
         name={coin.name} 

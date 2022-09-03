@@ -2,7 +2,11 @@ body{
 
   padding: 0;
   margin: 0;
-  background-color: #CFD2CF;
+  background-color: #dddddd;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
 }
 
 
@@ -37,4 +41,54 @@ input::placeholder{
 
 input:focus::-webkit-input-placeholder {
   color: white;
+}
+
+
+.infoRow{
+  background-color: #1C658C;
+  color: white;
+  width: 850px;
+}
+
+span{
+  display: inline-block;
+  text-align: center;
+  box-sizing: border-box;
+  font-family: 'Saira', sans-serif;
+}
+
+#s1{
+ 
+ width: 135px;
+}
+#s2{
+ 
+  width: 140px;
+ }
+ #s3{
+   padding-left: 20px;
+   width: 130px;
+ }
+ #s4{
+ 
+  width: 130px;
+  padding-left: 10px;
+ }
+ #s5{
+ 
+  width: 120px;
+  padding-left: 20px;
+ }
+#s6{
+
+  width: 160px;
+}
+
+#notfoundalert{
+
+  width: 850px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-family: 'Saira', sans-serif;
 }
